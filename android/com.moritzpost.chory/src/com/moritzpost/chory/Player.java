@@ -47,11 +47,10 @@ public class Player {
 					}
 				}
 				if (reseting) {
-					pos = 0;
-					firePositionChanged();
-					reseting = false;
+					perfomReset();
 				}
 			}
+
 		});
 	}
 
@@ -61,13 +60,23 @@ public class Player {
 		}
 	}
 
+	private void perfomReset() {
+		pos = 0;
+		firePositionChanged();
+		reseting = false;
+	}
+
 	public void pause() {
 		playing = false;
 	}
 
 	public void reset() {
-		playing = false;
-		reseting = true;
+		if (playing) {
+			playing = false;
+			reseting = true;
+		} else {
+			perfomReset();
+		}
 	}
 
 	public boolean isPlaying() {
