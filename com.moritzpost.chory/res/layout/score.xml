@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1" >
+
+    <TextView
+        android:id="@+id/score_title"
+        style="@style/ScoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/score_header_height"
+        android:background="@color/score_header_background"
+        android:text="@string/timeline" />
+
+    <com.moritzpost.chory.view.UnscrollableHorizontalScrollView
+        android:id="@+id/score_steps_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/score_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/score_title"
+        android:background="@color/score_header_background"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <com.moritzpost.chory.view.ScoreStepsView
+            android:id="@+id/score_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        </com.moritzpost.chory.view.ScoreStepsView>
+    </com.moritzpost.chory.view.UnscrollableHorizontalScrollView>
+
+    <com.moritzpost.chory.view.ScoreHorizontalScrollView
+        android:id="@+id/score_horizontal_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/score_title"
+        android:layout_toRightOf="@id/score_title"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarFadeDuration="0" >
+
+        <com.moritzpost.chory.view.ScoreVerticalScrollView
+            android:id="@+id/score_vertical_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbarFadeDuration="0" >
+
+            <com.moritzpost.chory.view.TimelineView
+                android:id="@+id/timeline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </com.moritzpost.chory.view.TimelineView>
+        </com.moritzpost.chory.view.ScoreVerticalScrollView>
+    </com.moritzpost.chory.view.ScoreHorizontalScrollView>
+
+    <com.moritzpost.chory.view.UnscrollableVerticalScrollView
+        android:id="@+id/score_track_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@id/score_title"
+        android:layout_below="@id/score_title"
+        android:layout_toLeftOf="@id/score_horizontal_scrollview"
+        android:fillViewport="true">
+
+        <com.moritzpost.chory.view.ScoreTrackHeaderView
+            android:id="@+id/score_track_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </com.moritzpost.chory.view.ScoreTrackHeaderView>
+    </com.moritzpost.chory.view.UnscrollableVerticalScrollView>
+
+</RelativeLayout>

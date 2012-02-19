@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chory</string>
+    <string name="timeline">Timeline</string>
+    <string name="usb_accessory_transfer_title">USB Accessory</string>
+    <string name="simulator_transfer_title">Simulator</string>
+
+</resources>

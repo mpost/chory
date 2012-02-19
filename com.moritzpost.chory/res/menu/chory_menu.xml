@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/select_transfer_menu_item"
+        android:actionProviderClass="com.moritzpost.chory.SelectTransferActionProvider"
+        android:showAsAction="always|withText"
+        android:title="Output"/>
+    <item
+        android:id="@+id/rewind_menu_item"
+        android:icon="@android:drawable/ic_media_rew"
+        android:showAsAction="always"
+        android:title="Reset"/>
+    <item
+        android:id="@+id/play_menu_item"
+        android:icon="@android:drawable/ic_media_play"
+        android:showAsAction="always"
+        android:title="Play"/>
+
+</menu>

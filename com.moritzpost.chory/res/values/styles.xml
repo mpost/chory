@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ScoreTitle" parent="android:Widget.Holo.TextView">
+        <item name="android:paddingLeft">@dimen/track_text_padding</item>
+        <item name="android:paddingRight">@dimen/track_text_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/holo_blue_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TrackTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:paddingLeft">@dimen/track_text_padding</item>
+        <item name="android:paddingRight">@dimen/track_text_padding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ScoreStepText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="anchor_tooltip_text" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/anchor_tooltip_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.Holo.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_holo_dark</item>
+        <!-- <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal_holo</item> -->
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+</resources>

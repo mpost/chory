@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.moritzpost.chory.view.ScoreView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <include layout="@layout/score" />
+
+        <include layout="@layout/anchor_tooltip" />
+    </com.moritzpost.chory.view.ScoreView>
+
+    <com.moritzpost.chory.view.SimulatorView
+        android:id="@+id/simulator"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="4">
+    </com.moritzpost.chory.view.SimulatorView>
+
+</LinearLayout>
