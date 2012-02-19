@@ -17,8 +17,8 @@
         <activity
             android:name=".ChoryActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Chory" 
-            android:screenOrientation="landscape">
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Chory" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
