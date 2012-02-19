@@ -1,0 +1,23 @@
+.h2 Chory
+
+_Chory allows you to control a robot from an android based device_
+
+.h3 Technology
+
+This project consits of several different components. Each component is self contained and can be exchanged if required
+
+.h4 Android
+
+The "android projects":https://github.com/mpost/chory/tree/master/android contain the control software to send commands from an android device to an arduino device. We currently support the "Android USB Accessory API":http://developer.android.com/guide/topics/usb/accessory.html but support for other transfer mechanisms can be added.
+
+.h4 Arduino
+
+The "arduino project":https://github.com/mpost/chory/tree/master/arduino contains the firmware for the "arduino platform":http://www.arduino.cc/. This project was developed on an "arduino uno":http://arduino.cc/en/Main/ArduinoBoardUno but other arduino version should work just fine.
+
+.h3 License
+
+This project is under no license what so ever. Take the code and do with it what every you want. If you like the project i would love to hear from you.
+
+.h3 Contact
+
+Moritz Post <moritzpost@gmail.com>, http://gplus.to/mpost
