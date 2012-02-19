@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cadence_default_width">40dip</dimen>
+    <dimen name="timeline_default_separator_size">2dip</dimen>
+    <dimen name="track_default_height">70dip</dimen>
+    <dimen name="curve_width">2dip</dimen>
+    <dimen name="anchor_radius">7dip</dimen>
+    <dimen name="anchor_stroke_width">1dip</dimen>
+    <dimen name="score_header_height">30dip</dimen>
+    <dimen name="touch_radius">40dip</dimen>
+    <dimen name="track_text_padding">10dip</dimen>
+    <dimen name="playback_indicator_width">2dip</dimen>
+    <dimen name="simulator_track_padding_bottom">12dip</dimen>
+</resources>
