@@ -1,6 +1,6 @@
 h2. Chory
 
-_Chory allows you to control a robot from an android based device_
+Chory allows you to control a robot from an android based device.
 
 h3. Technology
 
@@ -12,7 +12,7 @@ The "android projects":https://github.com/mpost/chory/tree/master/android contai
 
 h4. Arduino
 
-The "arduino project":https://github.com/mpost/chory/tree/master/arduino contains the firmware for the "arduino platform":http://www.arduino.cc/. This project was developed on an "arduino uno":http://arduino.cc/en/Main/ArduinoBoardUno but other arduino version should work just fine.
+The "Arduino project":https://github.com/mpost/chory/tree/master/arduino contains the firmware for the "arduino platform":http://www.arduino.cc/. This project was developed on an "Arduino Uno":http://arduino.cc/en/Main/ArduinoBoardUno but other arduino version should work just fine.
 
 h3. License
 
